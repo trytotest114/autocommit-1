@@ -35,4 +35,4 @@ jobs:
         echo "Commit made at $(date) with sticker: ${{ env.STICKER }}" >> commit-log.txt
         git add commit-log.txt
         git commit -m "For You: ${{ env.STICKER }}"
-        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        git push https://x-access-token:${{ secrets.GH_TOKEN1 }}@github.com/${{ github.repository }}.git HEAD:main
